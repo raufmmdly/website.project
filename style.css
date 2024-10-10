@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Rest of your CSS... */
+
+
+    
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./images.webprojec/Constructor-University-campus-3.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the image fixed while scrolling */
+}
+
+
+.header {
+    background-color: #08046a; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 10px 20px; /* Padding around the header */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+}
+
+.logo img {
+    height: 60px; /* Logo height */
+}
+
+.search-bar {
+    flex-grow: 1; /* Allow the search bar to take up space */
+    margin: 0 20px; /* Margin on sides */
+}
+
+.search-bar input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
+}
+
+/* Style for Navigation */
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    position: relative; /* Needed for dropdown */
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff; /* White text */
+    background-color: #08046a; /* Default background for nav items */
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.navigation .dropdown-content {
+    display: none; /* Hide the dropdowns by default */
+    position: absolute;
+    background-color: #fff; /* Background color for dropdown items */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    top: 100%; /* Aligns the dropdown below the main item */
+    left: 0;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.navigation .dropdown-content li {
+    margin: 0;
+    border-bottom: 1px solid #eee; /* Add border between dropdown items */
+}
+
+.navigation .dropdown-content a {
+    color: #333; /* Dark text color for dropdown items */
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+.navigation .dropdown-content a:hover {
+    background-color: #f4f4f4; /* Light background on hover */
+}
+
+.navigation .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown when hovering over the parent */
+}
+
+
+/* User Options */
+.user-options {
+    display: flex; /* Align user options horizontally */
+    align-items: center; /* Center circles vertically */
+}
+
+.circle {
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #f5f5f5; /* Circle color */
+    margin-left: 10px; /* Space between circles */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.circle:hover {
+    background-color: #060248; /* Darker color on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px; /* Padding for the main content */
+}
+
+.content-container {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.text-section {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.text-section h1 {
+    font-size: 2.5em; /* Heading size */
+    color: #f0ebeb; /* Dark text color */
+}
+
+.text-section p {
+    font-size: 1.2em; /* Paragraph size */
+    color: #f0ebeb; /* Lighter text color */
+}
+
+.image-section {
+    flex: 1; /* Take up remaining space */
+}
+
+.image-section img {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+/* Info Sections */
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.info-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.info-box img {
+    width: 50px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+.info-box textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.info-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-box button:hover {
+    background-color: #0056b3;
+}
+.common-questions {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.questions-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.question-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.question-button:active {
+    background-color: #004080;
+}
+
+
+
+/* Accordion Styles */
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    background-color: white;
+    display: none;
+    padding: 15px;
+    font-size: 1.1em;
+    color: #555;
+    border-top: 1px solid #ccc;
+}
+
+.accordion-btn.active + .accordion-content {
+    display: block;
+}
+
+.welcome-section {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    color: white; /* Sets the text color to white */
+    max-width: 800px; /* Limits the width of the text area */
+    margin: auto; /* Centers the text */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+.welcome-title {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a slight shadow for contrast */
+    margin-bottom: 20px;
+}
+
+.welcome-description {
+    font-size: 1.25em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Slight shadow effect on paragraph text */
+    margin-top: 10px;
+}
